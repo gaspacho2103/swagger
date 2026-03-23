@@ -136,7 +136,8 @@ npm run dev
 
 - посты пользователя<br />
 
-<p align="center"> <img width="1920" height="954" alt="profile" src="https://github.com/user-attachments/assets/89e6c332-4437-4f34-a27f-9e6e76e3dbad" /> </p><br />
+<p align="center"> <img width="1920" height="954" alt="profile" src="https://github.com/user-attachments/assets/89e6c332-4437-4f34-a27f-9e6e76e3dbad" /><br /><br /><img width="1920" height="953" alt="image" src="https://github.com/user-attachments/assets/d611d0ac-d2f0-4eec-95e8-e31ff75bb471" />
+ </p><br />
 Редактирование профиля доступно по кнопке с карандашом ✏️ — можно сменить никнейм, аватар и описание.<br /><br />
 <hr>
 <h3>🎯 Для чего этот проект?</h3><br />
