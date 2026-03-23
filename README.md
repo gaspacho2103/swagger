@@ -54,7 +54,8 @@
 git clone https://github.com/gaspacho2103/galaxy.git
 cd galaxy
 ```
-<p align="center"> <img width="1920" height="1080" alt="clone" src="https://github.com/user-attachments/assets/b276a76f-e17d-4f91-8495-dde9714ba4b2" /><br /> <img width="581" height="371" alt="clone2" src="https://github.com/user-attachments/assets/3ad9fb17-fb7f-4eb0-84d2-8d129ab94fbd" /> </p><br />
+<p align="center"> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e2ed3cf1-436c-4b04-9164-da9858ec5c24" /><img width="740" height="423" alt="image" src="https://github.com/user-attachments/assets/d5ee0d09-bcc7-454f-94a4-07d6feb09d46" />
+</p><br />
 <b>Шаг 2: Настройка базы данных</b>
 Откройте MySQL WorkBench (или другую СУБД), создайте подключение. <br /><br />
 
