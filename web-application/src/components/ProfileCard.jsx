@@ -14,7 +14,7 @@ function ProfileCard({ userData, onOpenPopup, isOwnProfile }) {
   const [isEditing, setIsEditing] = useState(false);
   const [editedData, setEditedData] = useState({
     username: userData.username,
-    description: userData.description || "Новый пользователь Swagger'a"
+    description: userData.description || "Новый пользователь Galaxy"
   });
   const [avatarPreview, setAvatarPreview] = useState(null);
   const fileInputRef = useRef(null);
