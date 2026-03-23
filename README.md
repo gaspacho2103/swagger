@@ -112,7 +112,7 @@ npm run dev
 
 Ниже — навигация по темам (топики).<br />
 
-<p align="center"> <img width="1920" height="956" alt="dark" src="https://github.com/user-attachments/assets/e7af3117-0401-46ee-8493-eea62ab04913" /><br /> <strong>🌙 Тёмная тема (по умолчанию)</strong></p><p align="center"><br /> <img width="1920" height="954" alt="light" src="https://github.com/user-attachments/assets/45546a5b-8240-45fb-b6b0-ed9e0812a352" /><br /> ☀️ Светлая тема </p><br />
+<p align="center"> <img width="1920" height="956" alt="dark" src="https://github.com/user-attachments/assets/e7af3117-0401-46ee-8493-eea62ab04913" /><br /> <strong>🌙 Тёмная тема (по умолчанию)</strong></p><p align="center"><br /> <img width="1920" height="954" alt="light" src="https://github.com/user-attachments/assets/45546a5b-8240-45fb-b6b0-ed9e0812a352" /><br /><strong>☀️ Светлая тема</strong></p><br />
 <h5>✍️ Создание поста</h5><br />
 Нажмите «Написать» → укажите заголовок, текст, выберите тему, при желании прикрепите файл.<br /><br />
 
