@@ -1,338 +1,152 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galaxy - социальная сеть форумного типа</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<h1 align="center">🌌 Galaxy — твой уголок в космосе идей</h1>
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
-            background: #f5f7fb;
-            color: #1e293b;
-            line-height: 1.5;
-            padding: 2rem 1rem;
-        }
+<br />
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 24px;
-            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
+<p align="center">
+  <img width="1920" height="1080" alt="galaxy_preview" src="https://github.com/user-attachments/assets/9edae280-cebb-4bad-983d-112a32d11e87" />
+</p>
 
-        .content {
-            padding: 2rem 2rem 3rem;
-        }
+<br />
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
+---
 
-        h1 span {
-            background: linear-gradient(135deg, #6366f1, #a855f7);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-        }
+### 🧐 Что это такое?
 
-        h2 {
-            font-size: 1.75rem;
-            margin: 2rem 0 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 3px solid #e2e8f0;
-        }
+**Galaxy** — это импровизированная социальная сеть форумного типа.  
+Проект написан на связке **React + Python Flask** с использованием **REST API**.
 
-        h3 {
-            font-size: 1.4rem;
-            margin: 1.75rem 0 1rem;
-            color: #0f172a;
-        }
+Здесь можно:
+- ✍️ Писать посты (с картинками, видео или аудио)
+- ❤️ Ставить лайки и оставлять комментарии
+- 👥 Подписываться на других пользователей
+- 📊 Смотреть статистику в профиле (подписчики, посты, подписки)
+- ✏️ Редактировать свой профиль (аватар, никнейм, описание)
 
-        .badge-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin: 1.5rem 0;
-        }
+<br />
 
-        .badge {
-            display: inline-block;
-            background: #f1f5f9;
-            padding: 0.3rem 0.9rem;
-            border-radius: 40px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: #1e293b;
-            text-decoration: none;
-        }
+---
 
-        .badge img {
-            vertical-align: middle;
-            margin-right: 6px;
-        }
+### 👨‍💻 Технологии
 
-        hr {
-            margin: 2rem 0;
-            border: none;
-            height: 2px;
-            background: linear-gradient(90deg, #e2e8f0, #cbd5e1, #e2e8f0);
-        }
+<ul>
+  <li><img src="https://img.icons8.com/color/18/000000/react-native.png" width="18" height="18" style="vertical-align: middle;" /> <strong>React JS</strong> — интерфейс</li>
+  <li>⚛️ <strong>react-query</strong> — управление состоянием и кэширование данных</li>
+  <li><img src="https://img.icons8.com/color/18/000000/python.png" width="18" height="18" style="vertical-align: middle;" /> <strong>Python Flask</strong> — бэкенд</li>
+  <li>🔁 <strong>REST API</strong> — архитектура взаимодействия</li>
+  <li>🔐 <strong>Flask JWT</strong> — аутентификация</li>
+  <li><img src="https://img.icons8.com/color/18/000000/mysql-logo.png" width="18" height="18" style="vertical-align: middle;" /> <strong>MySQL</strong> — база данных</li>
+</ul>
 
-        .tech-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin: 1rem 0 0.5rem;
-        }
+<br />
 
-        .tech-item {
-            background: #f8fafc;
-            padding: 0.4rem 1rem;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            border: 1px solid #e2e8f0;
-        }
+---
 
-        img {
-            max-width: 100%;
-            border-radius: 16px;
-            margin: 1.2rem 0;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-            border: 1px solid #eef2ff;
-        }
+### ⚙️ Установка (локальный сервер)
 
-        .img-caption {
-            font-size: 0.85rem;
-            text-align: center;
-            color: #475569;
-            margin-top: -0.8rem;
-            margin-bottom: 1.2rem;
-        }
+> Перед установкой убедитесь, что у вас есть **Python 3.13+**, **Node.js** и **MySQL**.
 
-        .step {
-            background: #fefce8;
-            border-left: 5px solid #eab308;
-            padding: 0.8rem 1.2rem;
-            margin: 1.5rem 0 1rem;
-            border-radius: 12px;
-            font-weight: 600;
-        }
+<br />
 
-        code {
-            background: #1e293b;
-            color: #e2e8f0;
-            padding: 0.2rem 0.5rem;
-            border-radius: 8px;
-            font-family: 'SF Mono', 'Menlo', monospace;
-            font-size: 0.85rem;
-        }
+**Шаг 1: Клонирование репозитория**  
+Скачайте архив или выполните в терминале:
 
-        pre {
-            background: #0f172a;
-            color: #e2e8f0;
-            padding: 1rem;
-            border-radius: 16px;
-            overflow-x: auto;
-            font-family: 'SF Mono', 'Menlo', monospace;
-            font-size: 0.85rem;
-            margin: 1.2rem 0;
-        }
+```bash
+git clone https://github.com/gaspacho2103/galaxy.git
+cd galaxy
+```
+<p align="center"> <img width="1920" height="1080" alt="clone" src="https://github.com/user-attachments/assets/b276a76f-e17d-4f91-8495-dde9714ba4b2" /><br /> <img width="581" height="371" alt="clone2" src="https://github.com/user-attachments/assets/3ad9fb17-fb7f-4eb0-84d2-8d129ab94fbd" /> </p>
+Шаг 2: Настройка базы данных
+Откройте MySQL WorkBench (или другую СУБД), создайте подключение.
 
-        blockquote {
-            background: #f1f5f9;
-            padding: 0.8rem 1.2rem;
-            border-radius: 16px;
-            margin: 1.2rem 0;
-            font-style: italic;
-            border-left: 4px solid #6366f1;
-        }
+<p align="center"> <img width="1920" height="1080" alt="mysql" src="https://github.com/user-attachments/assets/6a31d269-e149-4ec8-b280-fbf06f39bf9c" /> </p>
+Выполните скрипт galaxydb.sql — выполните все незакомментированные запросы.
 
-        .button-icon {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: #eef2ff;
-            padding: 0.2rem 0.8rem;
-            border-radius: 30px;
-            font-size: 0.8rem;
-        }
+<p align="center"> <img width="1920" height="1080" alt="sql_import" src="https://github.com/user-attachments/assets/c7b1123c-8414-4c2d-bb1d-c522f7ced7d6" /> </p>
+Шаг 3: Бэкенд (Flask)
+Откройте galaxy/rest-api/config.py и укажите в host IP‑адрес вашего сервера с базой данных.
 
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            background: #f8fafc;
-            border-top: 1px solid #e2e8f0;
-            color: #475569;
-        }
+<p align="center"> <img width="798" height="492" alt="config" src="https://github.com/user-attachments/assets/ceddada5-8cb7-4c14-876d-64b2ef425c9b" /> </p>
+Установите зависимости и запустите API:
 
-        @media (max-width: 680px) {
-            .content {
-                padding: 1.5rem;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-            h2 {
-                font-size: 1.4rem;
-            }
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-    <div class="content">
-        <h1>
-            <span>🌌 Galaxy</span>
-        </h1>
+bash
+pip install flask flask-jwt-extended flask-cors
+python main.py
+<p align="center"> <img width="797" height="213" alt="flask_run" src="https://github.com/user-attachments/assets/81b43710-a026-431c-938b-4abeab542bd7" /> </p>
+Шаг 4: Фронтенд (React)
+Скопируйте IP‑адрес сервера API (он отобразится в терминале) и вставьте во все строки, где используется react-query или await fetch.
 
-        <!-- Badges / ссылки (можно заменить на реальные, если нужны) -->
-        <div class="badge-container">
-            <span class="badge">⚛️ React 18</span>
-            <span class="badge">🐍 Flask</span>
-            <span class="badge">🗄️ MySQL</span>
-            <span class="badge">🔐 JWT</span>
-            <span class="badge">📡 REST API</span>
-        </div>
+<p align="center"> <img width="1920" height="1080" alt="api_ip" src="https://github.com/user-attachments/assets/d76f2c35-091c-47dc-808e-9d0aab3b855d" /> </p>
+Установите зависимости и запустите React:
 
-        <!-- главный скрин -->
-        <img src="https://github.com/user-attachments/assets/9edae280-cebb-4bad-983d-112a32d11e87" alt="Galaxy preview" />
+bash
+```
+npm install
+npm run dev
+```
+<p align="center"> <img width="1335" height="239" alt="react_start" src="https://github.com/user-attachments/assets/86e0ebc3-ff82-4e02-a54c-2364b0f84d52" /> </p>
+✅ Готово! Проект успешно запущен.
 
-        <h2>📖 Что это такое?</h2>
-        <p>
-            <strong>Galaxy</strong> — это импровизированная социальная сеть форумного типа, написанная на 
-            <strong>React JS + Python Flask</strong> с использованием архитектуры <strong>REST API</strong>.
-            Здесь можно публиковать посты, добавлять файлы, ставить лайки, писать комментарии и подписываться на других пользователей.
-        </p>
-        <p>
-            В профиле доступна статистика (подписчики, посты, подписки), а также возможность изменить аватар, никнейм или описание. 
-            Интерфейс поддерживает светлую и тёмную темы.
-        </p>
+<p align="center"> <img width="1920" height="1080" alt="final" src="https://github.com/user-attachments/assets/c03acc0c-3ee9-40a9-a857-5001507dd79b" /> </p>
+🧭 Руководство пользователя
+🔐 Регистрация и авторизация
+После запуска создайте аккаунт.
 
-        <hr />
+<p align="center"> <img width="1920" height="955" alt="register" src="https://github.com/user-attachments/assets/c3f74810-7ff0-459e-a3cb-c1b931dcda3d" /> </p>
+Затем войдите, используя указанные данные.
 
-        <h2>🛠️ Технологии</h2>
-        <div class="tech-grid">
-            <span class="tech-item">⚛️ React JS</span>
-            <span class="tech-item">📡 react-query</span>
-            <span class="tech-item">🐍 Python Flask</span>
-            <span class="tech-item">🔁 REST API</span>
-            <span class="tech-item">🔐 Flask JWT</span>
-            <span class="tech-item">🐬 MySQL</span>
-        </div>
+<p align="center"> <img width="1920" height="955" alt="login" src="https://github.com/user-attachments/assets/1a2bf621-a0bf-449b-bec8-9374d96dd4b8" /> </p>
+🏠 Главная страница
+После входа откроется лента постов.
+В шапке — поиск, кнопка профиля, переключатель темы.
+Слева — сайдбар с кнопками:
 
-        <hr />
+✏️ «Написать»
 
-        <h2>🚀 Установка и запуск</h2>
-        <p>Для локального запуска проекта выполните следующие шаги. Убедитесь, что установлены <strong>Python 3.13+</strong>, <strong>Node.js</strong> и <strong>MySQL</strong>.</p>
+👥 «Подписки»
 
-        <div class="step">📦 Шаг 1: Скачайте репозиторий</div>
-        <p>Скачайте архив с GitHub или выполните:</p>
-        <pre><code>git clone https://github.com/gaspacho2103/galaxy.git
-cd galaxy</code></pre>
-        <img src="https://github.com/user-attachments/assets/b276a76f-e17d-4f91-8495-dde9714ba4b2" alt="git clone" />
-        <img src="https://github.com/user-attachments/assets/3ad9fb17-fb7f-4eb0-84d2-8d129ab94fbd" alt="структура" />
+🚪 «Выйти»
 
-        <div class="step">🗄️ Шаг 2: Настройка базы данных</div>
-        <p>Откройте MySQL Workbench (или другую СУБД) и создайте подключение.</p>
-        <img src="https://github.com/user-attachments/assets/6a31d269-e149-4ec8-b280-fbf06f39bf9c" alt="workbench" />
-        <p>Выгрузите файл <code>galaxydb.sql</code> и выполните все незакомментированные запросы.</p>
-        <img src="https://github.com/user-attachments/assets/c7b1123c-8414-4c2d-bb1d-c522f7ced7d6" alt="sql import" />
+Ниже — навигация по темам (топики).
 
-        <div class="step">🐍 Шаг 3: Настройка бэкенда (Flask)</div>
-        <p>Откройте <code>galaxy/rest-api/config.py</code> и в параметре <code>host</code> укажите IP-адрес вашего сервера с БД.</p>
-        <img src="https://github.com/user-attachments/assets/ceddada5-8cb7-4c14-876d-64b2ef425c9b" alt="config" />
-        <p>Установите зависимости и запустите API:</p>
-        <pre><code>pip install flask flask-jwt-extended flask-cors
-python main.py</code></pre>
-        <img src="https://github.com/user-attachments/assets/81b43710-a026-431c-938b-4abeab542bd7" alt="flask run" />
+<p align="center"> <img width="1920" height="956" alt="dark" src="https://github.com/user-attachments/assets/e7af3117-0401-46ee-8493-eea62ab04913" /><br /> 🌙 Тёмная тема (по умолчанию) </p><p align="center"> <img width="1920" height="954" alt="light" src="https://github.com/user-attachments/assets/45546a5b-8240-45fb-b6b0-ed9e0812a352" /><br /> ☀️ Светлая тема </p>
+✍️ Создание поста
+Нажмите «Написать» → укажите заголовок, текст, выберите тему, при желании прикрепите файл.
 
-        <div class="step">⚛️ Шаг 4: Настройка фронтенда (React)</div>
-        <p>Скопируйте IP-адрес сервера API (виден в терминале) и вставьте во все строки, где используются <code>react-query</code> или <code>await fetch</code>.</p>
-        <img src="https://github.com/user-attachments/assets/d76f2c35-091c-47dc-808e-9d0aab3b855d" alt="api ip" />
-        <p>Установите зависимости и запустите React:</p>
-        <pre><code>npm install
-npm run dev</code></pre>
-        <img src="https://github.com/user-attachments/assets/86e0ebc3-ff82-4e02-a54c-2364b0f84d52" alt="npm run" />
-        <blockquote>✅ <strong>Готово!</strong> Проект успешно запущен. Переходите по адресу <code>http://localhost:3000</code>.</blockquote>
-        <img src="https://github.com/user-attachments/assets/c03acc0c-3ee9-40a9-a857-5001507dd79b" alt="final" />
+<p align="center"> <img width="1920" height="953" alt="new_post" src="https://github.com/user-attachments/assets/3d497d93-9900-4a7b-91e0-f98c219ccf64" /> </p>
+После создания появится уведомление, и пост отобразится в ленте.
 
-        <hr />
+<p align="center"> <img width="1920" height="954" alt="post_created" src="https://github.com/user-attachments/assets/d342e787-6c74-47c0-9d27-958e85ce185c" /> </p>
+💬 Взаимодействие
+Посты можно лайкать и комментировать.
 
-        <h2>📖 Руководство пользователя</h2>
+<p align="center"> <img width="1920" height="955" alt="like_comment" src="https://github.com/user-attachments/assets/c66d944d-c49b-4a7b-b337-58524f51aa29" /> </p>
+👤 Профиль
+Чтобы перейти в свой профиль — нажмите на кнопку профиля в шапке.
+Чтобы посмотреть профиль другого пользователя — кликните на его никнейм.
 
-        <h3>🔐 Регистрация и авторизация</h3>
-        <p>После запуска проекта необходимо создать аккаунт.</p>
-        <img src="https://github.com/user-attachments/assets/c3f74810-7ff0-459e-a3cb-c1b931dcda3d" alt="register" />
-        <p>Затем приложение перенаправит на страницу авторизации — введите указанные ранее данные.</p>
-        <img src="https://github.com/user-attachments/assets/1a2bf621-a0bf-449b-bec8-9374d96dd4b8" alt="login" />
+В профиле отображаются:
 
-        <h3>🏠 Главная страница</h3>
-        <p>После входа открывается главная лента. В левом сайдбаре находятся кнопки «Написать», «Подписки», «Выйти», а также навигация по темам (топикам). В шапке — переключение тем, поиск и кнопка профиля.</p>
-        <img src="https://github.com/user-attachments/assets/e7af3117-0401-46ee-8493-eea62ab04913" alt="dark theme" />
-        <div class="img-caption">🌙 Тёмная тема (по умолчанию)</div>
-        <img src="https://github.com/user-attachments/assets/45546a5b-8240-45fb-b6b0-ed9e0812a352" alt="light theme" />
-        <div class="img-caption">☀️ Светлая тема</div>
+статистика (подписчики, подписки, количество постов, дата регистрации)
 
-        <h3>✍️ Создание поста</h3>
-        <p>Нажмите «Написать» в сайдбаре, введите заголовок и текст, выберите тему и при желании прикрепите файл (изображение, видео или аудио).</p>
-        <img src="https://github.com/user-attachments/assets/3d497d93-9900-4a7b-91e0-f98c219ccf64" alt="new post" />
-        <p>После успешного создания появится уведомление, а пост отобразится в ленте.</p>
-        <img src="https://github.com/user-attachments/assets/d342e787-6c74-47c0-9d27-958e85ce185c" alt="post created" />
+никнейм, аватар, краткое описание
 
-        <h3>💬 Взаимодействие</h3>
-        <p>Посты можно лайкать и комментировать.</p>
-        <img src="https://github.com/user-attachments/assets/c66d944d-c49b-4a7b-b337-58524f51aa29" alt="likes and comments" />
+посты пользователя
 
-        <h3>👤 Профиль</h3>
-        <p>Чтобы перейти в свой профиль, нажмите на кнопку профиля в шапке. Для просмотра чужого профиля — кликните на никнейм пользователя.</p>
-        <img src="https://github.com/user-attachments/assets/89e6c332-4437-4f34-a27f-9e6e76e3dbad" alt="profile" />
-        <p>Информацию можно редактировать, нажав на карандаш ✏️ (изменение никнейма, аватарки и описания).</p>
-        <img src="https://github.com/user-attachments/assets/01c51d9e-d7bf-4238-84a5-b2521d0e7d8b" alt="edit profile 1" />
-        <img src="https://github.com/user-attachments/assets/c4ca7912-58a7-486b-9829-213006148d40" alt="edit profile 2" />
+<p align="center"> <img width="1920" height="954" alt="profile" src="https://github.com/user-attachments/assets/89e6c332-4437-4f34-a27f-9e6e76e3dbad" /> </p>
+Редактирование профиля доступно по кнопке с карандашом ✏️ — можно сменить никнейм, аватар и описание.
 
-        <hr />
+<p align="center"> <img width="1920" height="953" alt="edit1" src="https://github.com/user-attachments/assets/01c51d9e-d7bf-4238-84a5-b2521d0e7d8b" /><br /> <img width="1920" height="953" alt="edit2" src="https://github.com/user-attachments/assets/c4ca7912-58a7-486b-9829-213006148d40" /> </p>
+🎯 Для чего этот проект?
+Это мой дипломный проект и по совместительству первый полноценный прототип социальной сети (форума), на котором я:
 
-        <h2>🎯 Для чего этот проект?</h2>
-        <p>
-            Galaxy — мой дипломный проект. Он стал первым полноценным прототипом социальной сети, на котором я:
-            <ul>
-                <li>🔌 осваивал написание <strong>REST API</strong> на Flask</li>
-                <li>🧩 строил клиентскую часть на <strong>React</strong> (компоненты, стейт-менеджмент, react-query)</li>
-                <li>🔐 внедрял JWT-аутентификацию</li>
-                <li>🗄️ проектировал базу данных (MySQL) и связывал её с бэкендом</li>
-                <li>🌙 реализовал смену светлой/тёмной темы</li>
-            </ul>
-            Этот проект помог мне углубить понимание клиент-серверной архитектуры и современных инструментов веб-разработки.
-        </p>
+🐍 осваивал написание API на Flask
 
-        <hr />
+⚛️ углублялся во фронтенд на React
 
-        <h2>📬 Контакты</h2>
-        <p>Если есть вопросы или предложения — всегда рад обратной связи:</p>
-        <ul>
-            <li>📧 Email: <a href="mailto:maxytko108@gmail.com">maxytko108@gmail.com</a></li>
-            <li>💬 Telegram: <a href="https://t.me/garageenjoyer">@garageenjoyer</a></li>
-            <li>🐙 GitHub: <a href="https://github.com/gaspacho2103">gaspacho2103</a></li>
-        </ul>
-        <blockquote>⭐️ Если проект вам понравился, поставьте звёздочку на GitHub — это очень поддерживает!</blockquote>
-    </div>
-    <footer>
-        🌌 Galaxy — социальная сеть, созданная с ❤️ для форматного общения и обучения.
-    </footer>
-</div>
-</body>
-</html>
+🔐 разбирался с JWT‑токенами и REST‑архитектурой
+
+🗄️ проектировал базу данных и связывал её с бэкендом
+
+Здесь я учился строить клиент‑серверное приложение «с нуля», работать с файлами, темами оформления и выстраивать логику, приближенную к реальным проектам.
+
+⭐️ Если вам понравился проект, поставьте звёздочку на GitHub — это лучшая поддержка для меня!
