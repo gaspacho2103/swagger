@@ -54,18 +54,18 @@
 git clone https://github.com/gaspacho2103/galaxy.git
 cd galaxy
 ```
-<img width="1920" height="1080" alt="clone" src="https://github.com/user-attachments/assets/b276a76f-e17d-4f91-8495-dde9714ba4b2" /><br /> <img width="581" height="371" alt="clone2" src="https://github.com/user-attachments/assets/3ad9fb17-fb7f-4eb0-84d2-8d129ab94fbd" />br /><br />
-**Шаг 2: Настройка базы данных**
+<p align="center"><img width="1920" height="1080" alt="clone" src="https://github.com/user-attachments/assets/b276a76f-e17d-4f91-8495-dde9714ba4b2" /><br /></p><img width="581" height="371" alt="clone2" src="https://github.com/user-attachments/assets/3ad9fb17-fb7f-4eb0-84d2-8d129ab94fbd" />br />
+**Шаг 2: Настройка базы данных**<br />
 Откройте MySQL WorkBench (или другую СУБД), создайте подключение. <br /><br />
 
-<img width="1920" height="1080" alt="mysql" src="https://github.com/user-attachments/assets/6a31d269-e149-4ec8-b280-fbf06f39bf9c" />
+<p align="center"><img width="1920" height="1080" alt="mysql" src="https://github.com/user-attachments/assets/6a31d269-e149-4ec8-b280-fbf06f39bf9c" /></p><br />
 Выполните скрипт galaxydb.sql — выполните все незакомментированные запросы. <br /><br />
 
-<img width="1920" height="1080" alt="sql_import" src="https://github.com/user-attachments/assets/c7b1123c-8414-4c2d-bb1d-c522f7ced7d6" />
-**Шаг 3: Бэкенд (Flask)**
+<p align="center"<img width="1920" height="1080" alt="sql_import" src="https://github.com/user-attachments/assets/c7b1123c-8414-4c2d-bb1d-c522f7ced7d6" /></p><br />
+<b>Шаг 3: Бэкенд (Flask)</b><br />
 Откройте galaxy/rest-api/config.py и укажите в host IP‑адрес вашего сервера с базой данных. <br /><br />
 
-<img width="798" height="492" alt="config" src="https://github.com/user-attachments/assets/ceddada5-8cb7-4c14-876d-64b2ef425c9b" /> </p>
+<p align="center"><img width="798" height="492" alt="config" src="https://github.com/user-attachments/assets/ceddada5-8cb7-4c14-876d-64b2ef425c9b" /> </p><br />
 Установите зависимости и запустите API:<br />
 
 bash
@@ -73,8 +73,8 @@ bash
 pip install flask flask-jwt-extended flask-cors
 python main.py
 ```
-<p align="center"> <img width="797" height="213" alt="flask_run" src="https://github.com/user-attachments/assets/81b43710-a026-431c-938b-4abeab542bd7" /> </p><br/><br />
-**Шаг 4: Фронтенд (React)**
+<p align="center"> <img width="797" height="213" alt="flask_run" src="https://github.com/user-attachments/assets/81b43710-a026-431c-938b-4abeab542bd7" /> </p><br/>
+<b>Шаг 4: Фронтенд (React)</b><br />
 Скопируйте IP‑адрес сервера API (он отобразится в терминале) и вставьте во все строки, где используется react-query или await fetch.<br />
 
 <p align="center"> <img width="1920" height="1080" alt="api_ip" src="https://github.com/user-attachments/assets/d76f2c35-091c-47dc-808e-9d0aab3b855d" /> </p><br />
@@ -86,9 +86,9 @@ npm install
 npm run dev
 ```
 <p align="center"> <img width="1335" height="239" alt="react_start" src="https://github.com/user-attachments/assets/86e0ebc3-ff82-4e02-a54c-2364b0f84d52" /> </p><br /><br />
-✅ Готово! Проект успешно запущен.<br />
+✅ Готово! Проект успешно запущен.<br /><br />
 
-<p align="center"> <img width="1920" height="1080" alt="final" src="https://github.com/user-attachments/assets/c03acc0c-3ee9-40a9-a857-5001507dd79b" /> </p><br /><br /><br />
+<p align="center"> <img width="1920" height="1080" alt="final" src="https://github.com/user-attachments/assets/c03acc0c-3ee9-40a9-a857-5001507dd79b" /> </p><br /><br />
 <hr>
 <h3>🧭 Руководство пользователя</h3><br />
 <h5>🔐 Регистрация и авторизация</h5><br />
