@@ -18,11 +18,9 @@ export function ToastProvider({ children }) {
   const addToast = (messageOrObj, type = 'success') => {
     const id = Date.now();
     
-    // Если первый аргумент - объект
     if (typeof messageOrObj === 'object' && messageOrObj !== null) {
       setToasts((prev) => [...prev, { id, ...messageOrObj }]);
     } 
-    // Если два аргумента (сообщение и тип)
     else {
       setToasts((prev) => [...prev, { id, message: messageOrObj, type }]);
     }
