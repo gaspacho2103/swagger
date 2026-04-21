@@ -18,7 +18,7 @@ function Write({ onClose }) {
 
   const { mutate: createPostMutation, isPending } = useMutation({
     mutationFn: async (formData) => {
-      const response = await fetch('https://gaspsacho21.pythonanywhere.com/posts', {
+      const response = await fetch('http://127.0.0.1:5000/posts', {
         method: 'POST',
         body: formData,
         headers: {
