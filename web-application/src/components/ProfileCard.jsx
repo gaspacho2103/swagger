@@ -21,15 +21,15 @@ function ProfileCard({ userData, onOpenPopup, isOwnProfile }) {
   const { addToast } = useContext(ToastContext);
 
   let avatarUrl = userData.avatar_url 
-  ? `https://gaspsacho21.pythonanywhere.com/${userData.avatar_url}`
+  ? `http://127.0.0.1:5000/${userData.avatar_url}`
   : null;
 
   // Функция для получения подписок
   const fetchSubscriptions = async () => {
     const token = localStorage.getItem('jwt');
     const url = isOwnProfile
-      ? 'https://gaspsacho21.pythonanywhere.com/users/me'
-      : `https://gaspsacho21.pythonanywhere.com/users/${userData.user_id}`;
+      ? 'http://127.0.0.1:5000/users/me'
+      : `http://127.0.0.1:5000/users/${userData.user_id}`;
 
     const response = await fetch(url, {
       headers: { Authorization: `Bearer ${token}` },
@@ -42,7 +42,7 @@ function ProfileCard({ userData, onOpenPopup, isOwnProfile }) {
   // Функция для проверки подписки
   const checkSubscription = async () => {
     const token = localStorage.getItem('jwt');
-    const response = await fetch('https://gaspsacho21.pythonanywhere.com/users/me', {
+    const response = await fetch('http://127.0.0.1:5000/users/me', {
       headers: { Authorization: `Bearer ${token}` },
     });
     const data = await response.json();
@@ -56,7 +56,7 @@ function ProfileCard({ userData, onOpenPopup, isOwnProfile }) {
     const endpoint = 'subscribe';
     
     const response = await fetch(
-      `https://gaspsacho21.pythonanywhere.com/users/${endpoint}/${userData.user_id}`,
+      `http://127.0.0.1:5000/users/${endpoint}/${userData.user_id}`,
       {
         method,
         headers: {
@@ -119,7 +119,7 @@ function ProfileCard({ userData, onOpenPopup, isOwnProfile }) {
     }
 
     try {
-      const response = await fetch('https://gaspsacho21.pythonanywhere.com/users/me', {
+      const response = await fetch('http://127.0.0.1:5000/users/me', {
         method: 'PATCH',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -292,7 +292,7 @@ function ProfileCard({ userData, onOpenPopup, isOwnProfile }) {
             <ul className={`subs-list ${theme}`}>
               {subscriptions.map((sub) => {
                 const subAvatarUrl = sub.followed_id 
-                  ? `https://gaspsacho21.pythonanywhere.com/users/${sub.followed_id}/avatar`
+                  ? `http://127.0.0.1:5000/users/${sub.followed_id}/avatar`
                   : profileImage;
 
                 return (
