@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/galaxy/", // ⚠️ Важно: должен совпадать с basename в Router
+  base: "/galaxy/", // Должен совпадать с basename в Router
 });
