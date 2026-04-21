@@ -7,10 +7,10 @@
 
 .post {
     background: #282c34;
-    color: #ebebeb; /* Цвет текста */
-    padding: 20px; /* Отступы внутри поста */
-    border-radius: 10px; /* Закругленные углы */
-    width: 100%; /* Ширина поста */
+    color: #ebebeb;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
 
     box-shadow: 0px 4px 6px #282c34;
 }
@@ -21,13 +21,13 @@
 
 .info-wrapper {
     display: flex;
-    justify-content: space-between; /* Размещаем элементы по краям */
-    align-items: center; /* Центрируем по вертикали */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .account-wrapper {
     display: flex;
-    align-items: center; /* Центрируем аватарку и ник по вертикали */
+    align-items: center;
 
     padding: 12px 0px;
 }
@@ -45,35 +45,35 @@
 }
 
 .account-wrapper img {
-    width: 38px; /* Ширина аватарки */
-    height: 38px; /* Высота аватарки */
-    border-radius: 50%; /* Круглая аватарка */
-    margin-right: 10px; /* Отступ справа от аватарки */
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .post-time {
-    color: #a9a9a9; /* Цвет текста для времени публикации */
+    color: #a9a9a9;
 
     margin-bottom: 5px;
 }
 
 .post-title {
-    font-size: 25px; /* Размер шрифта заголовка поста */
+    font-size: 25px;
     margin: 10px 0px;
     padding: 5px;
 }
 
 .post-desc {
-    font-size: 17px; /* Размер шрифта описания поста */
+    font-size: 17px;
     margin: 10px 0px;
     padding: 5px;
 }
 
 .media-content {
-    width: 100%; /* Ширина изображения на всю ширину контейнера */
-    height: auto; /* Автоматическая высота для сохранения пропорций */
-    border-radius: 8px; /* Закругленные углы изображения */
-    margin-bottom: 10px; /* Отступ снизу изображения */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .audio-content {
@@ -82,14 +82,14 @@
 
 .active-wrapper {
     display: flex;
-    justify-content: space-between; /* Размещаем кнопки по краям */
+    justify-content: space-between;
 
     width: 50%;
     margin: 0 auto;
 }
 
 .active-btn {
-    cursor: pointer; /* Курсор в виде указателя при наведении на кнопки активностей */
+    cursor: pointer;
     display: flex;
     align-items: center;
 
@@ -97,7 +97,7 @@
 }
 
 .active-btn svg {
-   margin-right: 5px; /* Отступ справа от иконки в кнопке активности */ 
+   margin-right: 5px;
    
    transition: fill 0.3s ease;
 }
@@ -119,8 +119,8 @@
 }
 
 .comment .account-wrapper img {
-    width: 32px; /* Ширина аватарки */
-    height: 32px; /* Высота аватарки */
+    width: 32px;
+    height: 32px;
 }
 
 .comment .content {
