@@ -23,8 +23,8 @@ aside {
 }
 
 .navigate .list {
-    list-style-type: none; /* Убираем маркеры */
-    padding: 0; /* Убираем отступы */
+    list-style-type: none;
+    padding: 0;
 
     padding: 5px;
 
@@ -32,10 +32,10 @@ aside {
 }
 
 .navigate .list li a {
-    color: #ebebeb; /* Цвет текста */
-    text-decoration: none; /* Убираем подчеркивание */
-    display: block; /* Делаем ссылки блочными для удобства клика */
-    padding: 10px 0; /* Отступы для ссылок */
+    color: #ebebeb;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
 
     font-size: 22px;
 
@@ -55,7 +55,7 @@ aside {
 }
 
 .navigate .list li a:hover {
-    color: #11d171; /* Цвет текста при наведении */
+    color: #11d171;
 }
 
 .navigate .list li a:hover svg {
