@@ -29,7 +29,7 @@ function Home() {
     if (!token) throw new Error('Требуется авторизация');
     
     // Добавляем параметр темы в URL запроса, если она выбрана
-    let url = 'https://gaspsacho21.pythonanywhere.com/posts';
+    let url = 'http://127.0.0.1:5000/posts';
     let topicRus = getTopicName(currentTopic);
     if (topicRus) {
       url += `/topic/${topicRus}`;
