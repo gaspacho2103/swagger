@@ -14,7 +14,7 @@ function Subs({ onClose }) {
   
 
   useEffect(() => {
-    fetch('https://gaspsacho21.pythonanywhere.com/users/me', {
+    fetch('http://127.0.0.1:5000/users/me', {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('jwt')}`,
       },
@@ -80,7 +80,7 @@ function Subs({ onClose }) {
             subscriptions.map((sub) => {
               // Формируем URL аватарки для каждого подписчика
               const avatarUrl = sub.id 
-                ? `https://gaspsacho21.pythonanywhere.com/users/${sub.id}/avatar`
+                ? `http://127.0.0.1:5000/users/${sub.id}/avatar`
                 : profileImage;
 
               return (
