@@ -11,15 +11,15 @@ function ToastNotification({ message, type, onClose }) {
     }, 3000);
 
     return () => clearTimeout(autoCloseTimer);
-  }, []); // Убрали onClose из зависимостей
+  }, []);
 
-  // Вызов onClose после анимации (если она есть) или сразу
+
   useEffect(() => {
     if (!isExiting) return;
     
     const timer = setTimeout(() => {
       onClose();
-    }, 300); // Если не нужна анимация, можно поставить 0
+    }, 300);
     
     return () => clearTimeout(timer);
   }, [isExiting, onClose]);
