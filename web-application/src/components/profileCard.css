@@ -136,14 +136,14 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 15px; /* Добавляем отступ между карточками */
+  gap: 15px;
 
   margin: 30px 0px;
 }
 
 .info-card {
-  flex: 1; /* Равномерное распределение пространства */
-  min-width: 0; /* Фикс для переполнения контента */
+  flex: 1;
+  min-width: 0;
   padding: 6px 0;
   border-radius: 10px;
   text-align: center;
@@ -241,8 +241,8 @@
 /* Стили для редактирования аватарки */
 .image-wrapper {
   position: relative;
-  border-radius: 50%; /* Для круглой формы */
-  overflow: hidden; /* Обрезаем все что выходит за границы */
+  border-radius: 50%;
+  overflow: hidden;
   width: 50%;
   margin-right: 20px;
     
