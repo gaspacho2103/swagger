@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { QueryClientProvider } from '@tanstack/react-query'; // Добавьте этот импорт
+import { QueryClientProvider } from '@tanstack/react-query';
 import App from './App';
 import { ThemeProvider } from './ThemeContext';
 import { queryClient } from './queryClient';
