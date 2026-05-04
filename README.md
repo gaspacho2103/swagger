@@ -29,12 +29,12 @@
 <h3>👨‍💻 Технологии</h3>
 
 <ul>
-  <li class="d-flex align-items-center"><img src="https://img.icons8.com/color/18/000000/react-native.png" width="18" height="18" class="me-2"/> <strong>React JS</strong> — интерфейс</li>
-  <li class="d-flex align-items-center">⚛️ <span class="me-2"></span> <strong>react-query</strong> — управление состоянием и кэширование данных</li>
-  <li class="d-flex align-items-center"><img src="https://img.icons8.com/color/18/000000/python.png" width="18" height="18" class="me-2"/> <strong>Python Flask</strong> — бэкенд</li>
-  <li class="d-flex align-items-center">🔁 <span class="me-2"></span> <strong>REST API</strong> — архитектура взаимодействия</li>
-  <li class="d-flex align-items-center">🔐 <span class="me-2"></span> <strong>Flask JWT</strong> — аутентификация</li>
-  <li class="d-flex align-items-center"><img src="https://img.icons8.com/color/18/000000/mysql-logo.png" width="18" height="18" class="me-2"/> <strong>MySQL</strong> — база данных</li>
+  <li style="display: flex; align-items: center; gap: 8px;"><img src="https://img.icons8.com/color/18/000000/react-native.png" width="18" height="18" /> <strong>React JS</strong> — интерфейс</li>
+  <li style="display: flex; align-items: center; gap: 8px;"><span style="font-size: 18px;">⚛️</span> <strong>react-query</strong> — управление состоянием и кэширование данных</li>
+  <li style="display: flex; align-items: center; gap: 8px;"><img src="https://img.icons8.com/color/18/000000/python.png" width="18" height="18" /> <strong>Python Flask</strong> — бэкенд</li>
+  <li style="display: flex; align-items: center; gap: 8px;"><span style="font-size: 18px;">🔁</span> <strong>REST API</strong> — архитектура взаимодействия</li>
+  <li style="display: flex; align-items: center; gap: 8px;"><span style="font-size: 18px;">🔐</span> <strong>Flask JWT</strong> — аутентификация</li>
+  <li style="display: flex; align-items: center; gap: 8px;"><img src="https://img.icons8.com/color/18/000000/mysql-logo.png" width="18" height="18" /> <strong>MySQL</strong> — база данных</li>
 </ul>
 
 <br />
@@ -64,7 +64,7 @@ cd galaxy
 
 <p align="center"<img width="1920" height="1080" alt="sql_import" src="https://github.com/user-attachments/assets/c7b1123c-8414-4c2d-bb1d-c522f7ced7d6" /></p><br />
 <b>Шаг 3: Бэкенд (Flask)</b><br />
-Откройте <code>galaxy/rest-api/config.py</code> и укажите в host IP‑адрес вашего сервера с базой данных. <br /><br />
+Откройте <code>galaxy/rest-api/config.py</code> и укажите в <code>host</code> IP‑адрес вашего сервера с базой данных. <br /><br />
 
 <p align="center"><img width="798" height="492" alt="config" src="https://github.com/user-attachments/assets/ceddada5-8cb7-4c14-876d-64b2ef425c9b" /> </p><br />
 Установите зависимости и запустите API:<br />
@@ -92,7 +92,7 @@ npm run dev
 <p align="center"> <img width="1920" height="1080" alt="final" src="https://github.com/user-attachments/assets/c03acc0c-3ee9-40a9-a857-5001507dd79b" /> </p><br /><br />
 <hr>
 <h3>🧭 Руководство пользователя</h3><br />
-<h4>🔐 Регистрация и авторизация</h4><br />
+<h4>Регистрация и авторизация</h4><br />
 После запуска создайте аккаунт.<br /><br />
 
 <p align="center"> <img width="1920" height="955" alt="register" src="https://github.com/user-attachments/assets/c3f74810-7ff0-459e-a3cb-c1b931dcda3d" /> </p><br />
@@ -104,27 +104,27 @@ npm run dev
 В шапке — поиск, кнопка профиля, переключатель темы.<br />
 Слева — сайдбар с кнопками:<br />
 
-✏️ «Написать»<br />
+«Написать»<br />
 
-👥 «Подписки»<br />
+«Подписки»<br />
 
-🚪 «Выйти»<br />
+«Выйти»<br />
 
 Ниже — навигация по темам (топики).<br />
 
 <p align="center"> <img width="1920" height="956" alt="dark" src="https://github.com/user-attachments/assets/e7af3117-0401-46ee-8493-eea62ab04913" /><br /> <strong>🌙 Тёмная тема (по умолчанию)</strong></p><p align="center"><br /> <img width="1920" height="954" alt="light" src="https://github.com/user-attachments/assets/45546a5b-8240-45fb-b6b0-ed9e0812a352" /><br /><strong>☀️ Светлая тема</strong></p><br />
-<h4>✍️ Создание поста</h4><br />
+<h4>Создание поста</h4><br />
 Нажмите «Написать» → укажите заголовок, текст, выберите тему, при желании прикрепите файл.<br /><br />
 
 <p align="center"> <img width="1920" height="953" alt="new_post" src="https://github.com/user-attachments/assets/3d497d93-9900-4a7b-91e0-f98c219ccf64" /> </p><br />
 После создания появится уведомление, и пост отобразится в ленте.<br /><br />
 
 <p align="center"> <img width="1920" height="954" alt="post_created" src="https://github.com/user-attachments/assets/d342e787-6c74-47c0-9d27-958e85ce185c" /> </p><br />
-<h4>💬Взаимодействие</h4><br />
+<h4>Взаимодействие</h4><br />
 Посты можно лайкать и комментировать.<br /><br />
 
 <p align="center"> <img width="1920" height="955" alt="like_comment" src="https://github.com/user-attachments/assets/c66d944d-c49b-4a7b-b337-58524f51aa29" /> </p><br />
-<h4>👤 Профиль</h4><br />
+<h4>Профиль</h4><br />
 Чтобы перейти в свой профиль — нажмите на кнопку профиля в шапке.<br />
 Чтобы посмотреть профиль другого пользователя — кликните на его никнейм.<br />
 
@@ -137,7 +137,7 @@ npm run dev
 - посты пользователя<br />
 
 <p align="center"> <img width="1920" height="954" alt="profile" src="https://github.com/user-attachments/assets/89e6c332-4437-4f34-a27f-9e6e76e3dbad" /></p><br />
-Редактирование профиля доступно по кнопке с карандашом ✏️ — можно сменить никнейм, аватар и описание.<br /><br />
+Редактирование профиля доступно по кнопке с карандашом — можно сменить никнейм, аватар и описание.<br /><br />
 <p align="center"><img width="1920" height="953" alt="image" src="https://github.com/user-attachments/assets/6173cd41-df14-4ca0-9372-8bf780d78e3f" /></p><br />
 <hr>
 <h3>🎯 Для чего этот проект?</h3><br />
