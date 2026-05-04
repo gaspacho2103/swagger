@@ -29,12 +29,12 @@
 <h3>👨‍💻 Технологии</h3>
 
 <ul>
-  <li><img src="https://img.icons8.com/color/18/000000/react-native.png" width="18" height="18" style="vertical-align: middle;" /> <strong>React JS</strong> — интерфейс</li>
-  <li>⚛️ <strong>react-query</strong> — управление состоянием и кэширование данных</li>
-  <li><img src="https://img.icons8.com/color/18/000000/python.png" width="18" height="18" style="vertical-align: middle;" /> <strong>Python Flask</strong> — бэкенд</li>
-  <li>🔁 <strong>REST API</strong> — архитектура взаимодействия</li>
-  <li>🔐 <strong>Flask JWT</strong> — аутентификация</li>
-  <li><img src="https://img.icons8.com/color/18/000000/mysql-logo.png" width="18" height="18" style="vertical-align: middle;" /> <strong>MySQL</strong> — база данных</li>
+  <li class="d-flex align-items-center"><img src="https://img.icons8.com/color/18/000000/react-native.png" width="18" height="18" class="me-2"/> <strong>React JS</strong> — интерфейс</li>
+  <li class="d-flex align-items-center">⚛️ <span class="me-2"></span> <strong>react-query</strong> — управление состоянием и кэширование данных</li>
+  <li class="d-flex align-items-center"><img src="https://img.icons8.com/color/18/000000/python.png" width="18" height="18" class="me-2"/> <strong>Python Flask</strong> — бэкенд</li>
+  <li class="d-flex align-items-center">🔁 <span class="me-2"></span> <strong>REST API</strong> — архитектура взаимодействия</li>
+  <li class="d-flex align-items-center">🔐 <span class="me-2"></span> <strong>Flask JWT</strong> — аутентификация</li>
+  <li class="d-flex align-items-center"><img src="https://img.icons8.com/color/18/000000/mysql-logo.png" width="18" height="18" class="me-2"/> <strong>MySQL</strong> — база данных</li>
 </ul>
 
 <br />
@@ -60,11 +60,11 @@ cd galaxy
 Откройте MySQL WorkBench (или другую СУБД), создайте подключение. <br /><br />
 
 <p align="center"><img width="1920" height="1080" alt="mysql" src="https://github.com/user-attachments/assets/6a31d269-e149-4ec8-b280-fbf06f39bf9c" /></p><br />
-Выполните скрипт galaxydb.sql — выполните все незакомментированные запросы. <br /><br />
+Выполните скрипт <code>galaxydb.sql</code> — выполните все незакомментированные запросы. <br /><br />
 
 <p align="center"<img width="1920" height="1080" alt="sql_import" src="https://github.com/user-attachments/assets/c7b1123c-8414-4c2d-bb1d-c522f7ced7d6" /></p><br />
 <b>Шаг 3: Бэкенд (Flask)</b><br />
-Откройте galaxy/rest-api/config.py и укажите в host IP‑адрес вашего сервера с базой данных. <br /><br />
+Откройте <code>galaxy/rest-api/config.py</code> и укажите в host IP‑адрес вашего сервера с базой данных. <br /><br />
 
 <p align="center"><img width="798" height="492" alt="config" src="https://github.com/user-attachments/assets/ceddada5-8cb7-4c14-876d-64b2ef425c9b" /> </p><br />
 Установите зависимости и запустите API:<br />
@@ -76,7 +76,7 @@ python main.py
 ```
 <p align="center"> <img width="797" height="213" alt="flask_run" src="https://github.com/user-attachments/assets/81b43710-a026-431c-938b-4abeab542bd7" /> </p><br/>
 <b>Шаг 4: Фронтенд (React)</b><br />
-Скопируйте IP‑адрес сервера API (он отобразится в терминале) и вставьте во все строки, где используется react-query или await fetch.<br /><br />
+Скопируйте IP‑адрес сервера API (он отобразится в терминале) и вставьте во все строки, где используется <code>react-query</code> или <code>await fetch</code><br /><br />
 
 <p align="center"> <img width="1920" height="1080" alt="api_ip" src="https://github.com/user-attachments/assets/d76f2c35-091c-47dc-808e-9d0aab3b855d" /> </p><br />
 Установите зависимости и запустите React:<br />
@@ -92,14 +92,14 @@ npm run dev
 <p align="center"> <img width="1920" height="1080" alt="final" src="https://github.com/user-attachments/assets/c03acc0c-3ee9-40a9-a857-5001507dd79b" /> </p><br /><br />
 <hr>
 <h3>🧭 Руководство пользователя</h3><br />
-<h5>🔐 Регистрация и авторизация</h5><br />
+<h4>🔐 Регистрация и авторизация</h4><br />
 После запуска создайте аккаунт.<br /><br />
 
 <p align="center"> <img width="1920" height="955" alt="register" src="https://github.com/user-attachments/assets/c3f74810-7ff0-459e-a3cb-c1b931dcda3d" /> </p><br />
 Затем войдите, используя указанные данные.<br /><br />
 
 <p align="center"> <img width="1920" height="955" alt="login" src="https://github.com/user-attachments/assets/1a2bf621-a0bf-449b-bec8-9374d96dd4b8" /> </p><br />
-<h5>🏠 Главная страница</h5><br />
+<h4>🏠 Главная страница</h4><br />
 После входа откроется лента постов.<br />
 В шапке — поиск, кнопка профиля, переключатель темы.<br />
 Слева — сайдбар с кнопками:<br />
@@ -113,18 +113,18 @@ npm run dev
 Ниже — навигация по темам (топики).<br />
 
 <p align="center"> <img width="1920" height="956" alt="dark" src="https://github.com/user-attachments/assets/e7af3117-0401-46ee-8493-eea62ab04913" /><br /> <strong>🌙 Тёмная тема (по умолчанию)</strong></p><p align="center"><br /> <img width="1920" height="954" alt="light" src="https://github.com/user-attachments/assets/45546a5b-8240-45fb-b6b0-ed9e0812a352" /><br /><strong>☀️ Светлая тема</strong></p><br />
-<h5>✍️ Создание поста</h5><br />
+<h4>✍️ Создание поста</h4><br />
 Нажмите «Написать» → укажите заголовок, текст, выберите тему, при желании прикрепите файл.<br /><br />
 
 <p align="center"> <img width="1920" height="953" alt="new_post" src="https://github.com/user-attachments/assets/3d497d93-9900-4a7b-91e0-f98c219ccf64" /> </p><br />
 После создания появится уведомление, и пост отобразится в ленте.<br /><br />
 
 <p align="center"> <img width="1920" height="954" alt="post_created" src="https://github.com/user-attachments/assets/d342e787-6c74-47c0-9d27-958e85ce185c" /> </p><br />
-<h5>💬Взаимодействие</h5><br />
+<h4>💬Взаимодействие</h4><br />
 Посты можно лайкать и комментировать.<br /><br />
 
 <p align="center"> <img width="1920" height="955" alt="like_comment" src="https://github.com/user-attachments/assets/c66d944d-c49b-4a7b-b337-58524f51aa29" /> </p><br />
-<h5>👤 Профиль</h5><br />
+<h4>👤 Профиль</h4><br />
 Чтобы перейти в свой профиль — нажмите на кнопку профиля в шапке.<br />
 Чтобы посмотреть профиль другого пользователя — кликните на его никнейм.<br />
 
