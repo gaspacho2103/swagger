@@ -28,14 +28,32 @@
 
 <h3>👨‍💻 Технологии</h3>
 
-<ul>
-  <li style="display: flex; align-items: center; gap: 8px;"><img src="https://img.icons8.com/color/18/000000/react-native.png" width="18" height="18" /> <strong>React JS</strong> — интерфейс</li>
-  <li style="display: flex; align-items: center; gap: 8px;"><span style="font-size: 18px;">⚛️</span> <strong>react-query</strong> — управление состоянием и кэширование данных</li>
-  <li style="display: flex; align-items: center; gap: 8px;"><img src="https://img.icons8.com/color/18/000000/python.png" width="18" height="18" /> <strong>Python Flask</strong> — бэкенд</li>
-  <li style="display: flex; align-items: center; gap: 8px;"><span style="font-size: 18px;">🔁</span> <strong>REST API</strong> — архитектура взаимодействия</li>
-  <li style="display: flex; align-items: center; gap: 8px;"><span style="font-size: 18px;">🔐</span> <strong>Flask JWT</strong> — аутентификация</li>
-  <li style="display: flex; align-items: center; gap: 8px;"><img src="https://img.icons8.com/color/18/000000/mysql-logo.png" width="18" height="18" /> <strong>MySQL</strong> — база данных</li>
-</ul>
+<table>
+  <tr>
+    <td style="width: 24px; vertical-align: middle;"><img src="https://img.icons8.com/color/18/000000/react-native.png" width="18" height="18" /></td>
+    <td style="vertical-align: middle;"><strong>React JS</strong> — интерфейс</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><span style="font-size: 18px;">⚛️</span></td>
+    <td style="vertical-align: middle;"><strong>react-query</strong> — управление состоянием и кэширование данных</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><img src="https://img.icons8.com/color/18/000000/python.png" width="18" height="18" /></td>
+    <td style="vertical-align: middle;"><strong>Python Flask</strong> — бэкенд</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><span style="font-size: 18px;">🔁</span></td>
+    <td style="vertical-align: middle;"><strong>REST API</strong> — архитектура взаимодействия</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><span style="font-size: 18px;">🔐</span></td>
+    <td style="vertical-align: middle;"><strong>Flask JWT</strong> — аутентификация</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><img src="https://img.icons8.com/color/18/000000/mysql-logo.png" width="18" height="18" /></td>
+    <td style="vertical-align: middle;"><strong>MySQL</strong> — база данных</td>
+  </tr>
+</table>
 
 <br />
 
